@@ -1,0 +1,46 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background-color: #fffaf0; color: #444; scroll-behavior: smooth; }
+
+/* Navbar */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1rem 10%; background: #ff9933; position: fixed;
+    width: 100%; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.logo { font-size: 1.5rem; font-weight: bold; color: white; letter-spacing: 2px; }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 25px; }
+.nav-links a { text-decoration: none; color: white; font-weight: 600; }
+
+/* Hero */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url(https://share.google/LQOOaQsXf9RSpWOPG);
+    background-size: cover; background-position: center;
+    display: flex; justify-content: center; align-items: center;
+    text-align: center; color: white;
+}
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; color: #ff9933; }
+
+/* Menu Section */
+.menu { padding: 60px 10%; }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: #d35400; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+.menu-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; border: 1px solid #ffd1a1; }
+.card-img { height: 180px; background-size: cover; background-position: center; }
+.menu-card h3 { margin: 15px 0 5px; color: #d35400; }
+.menu-card p { padding: 0 15px; font-size: 0.85rem; color: #777; }
+.price { display: block; padding: 15px; font-size: 1.3rem; font-weight: bold; color: #27ae60; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 10px 25px; background: #ff9933; color: white; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+
+/* Footer */
+footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero h1 { font-size: 2.5rem; }
+}
